@@ -37,9 +37,8 @@ def nyc_pigeon_organizer(data)
   fill_data(pigeon_names, data, pigeons)
 
   binding.pry
+  pigeons
 end
-
-
 
 pigeon_data = {
   :color => {
@@ -59,6 +58,5 @@ pigeon_data = {
     "City Hall" => ["Andrew"]
   }
 }
-
 
 nyc_pigeon_organizer(pigeon_data)

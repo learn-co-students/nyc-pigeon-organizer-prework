@@ -1,0 +1,8 @@
+
+#Get names array
+
+def get_names(data)
+  data.values.map do |hash|
+    hash.values
+  end.flatten.uniq
+end

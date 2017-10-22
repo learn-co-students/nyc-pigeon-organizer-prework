@@ -1,11 +1,15 @@
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(key, hash), result|
-    hash.each do |value, words|
-      words.each do |name|
-        result[name] ||= {}
-        result[name][key] ||= []
-        result[name][key] << value.to_s
+ organized = {}
+
+ data.each do |characteristic, choice|
+     choice.each do |fix, pigeons|
+       pigeons.each do |pigeon|
+         organized[pigeon] ||= {}
+         organized[pigeon][characteristic] ||= []
+        organized[pigeon][characteristic] << fix.to_s
       end
     end
   end
-end
+
+   organized
+ end

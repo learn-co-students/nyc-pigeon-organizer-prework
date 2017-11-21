@@ -26,8 +26,16 @@ def nyc_pigeon_organizer(data)
   data.each do |keys, attributes|
     attributes.each do |values, pigeons|
       pigeons.each do |pigeon|
-         pigeon_list[pigeon] ||= {}
-         pigeon_list[pigeon][keys] ||= []
+         if pigeon_list[pigeon]
+           nil
+         else
+           pigeon_list[pigeon] = {}
+         end
+         if pigeon_list[pigeon][keys]
+           nil
+         else
+         pigeon_list[pigeon][keys] = []
+        end
          pigeon_list[pigeon][keys] << values.to_s
       end
     end

@@ -3,8 +3,8 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, attribute_data|
     attribute_data.each do |stats, pigeon|
       pigeon.each do |name|
-        new[name] ||= {}
-        new[name][attribute] ||= []
+        new[name] = {} unless new[name]
+        new[name][attribute] = [] unless new[name][attribute]
         new[name][attribute] << stats.to_s
       end
     end

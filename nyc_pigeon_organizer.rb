@@ -21,3 +21,16 @@ def nyc_pigeon_organizer(data)
   
   output_hash
 end
+
+# def nyc_pigeon_organizer(data)
+#   data.each_with_object({}) do | (attribute, detail_hash), output_hash |
+#     detail_hash.each do | detail, name_array |
+#       name_array.each do | name |
+#         output_hash[name] ||= {}
+#         output_hash[name][attribute] ||= []
+#         output_hash[name][attribute] << detail.to_s
+#       end
+#     end
+#   end
+# end
+

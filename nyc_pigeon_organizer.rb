@@ -1,4 +1,3 @@
-require "pry"
 def nyc_pigeon_organizer(data)
   bird_hash = Hash.new
   data.each do |attribute, attribute_data| # attribute refers to color, gender, lives ; specification refers to type of color, one of two genders, or place of living

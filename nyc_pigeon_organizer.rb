@@ -2,23 +2,23 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  data.map do |attribute, categories|
-    # puts "#{attribute}: #{categories.values}"
+  data.each do |trait, categories|
+    # puts "#{trait}: #{categories.values}"
 
     #:color, {:purple => {...}}
 
-    categories.map do |details, people|
+    categories.each do |details, pigeons|
       #purple: ["Theo", "Peter Jr.", "Lucky"]
       #grey: ["Theo", "Peter Jr.", "Ms. K"]
 
-      people.map do |person|
-        #Check if person is added to hash already. If empty, add person to top level
-        if pigeon_list[person].nil?
-          pigeon_list[person] = {}
+      pigeons.each do |pigeon|
+        #Check if pigeon is added to hash already. If empty, add pigeon to top level
+        if pigeon_list[pigeon].nil?
+          pigeon_list[pigeon] = {}
         end
 
-        pigeon_list[person][attribute] ||= []
-        pigeon_list[person][attribute].push(details.to_s)
+        pigeon_list[pigeon][trait] ||= []
+        pigeon_list[pigeon][trait].push(details.to_s)
       end
     end
   end

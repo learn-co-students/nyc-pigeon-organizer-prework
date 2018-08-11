@@ -1,11 +1,9 @@
-require "pry"
-
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
     :grey => ["Theo", "Peter Jr.", "Ms. K"],
-    # :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
-    # :brown => ["Queenie", "Alex"]
+    :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
+    :brown => ["Queenie", "Alex"]
   },
   :gender => {
     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
@@ -26,7 +24,6 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, options|
   	options.each do |option, pigeons|
   		pigeons.each do |pigeon|
-  			# binding.pry
   			if result.include? pigeon
 	  			if result[pigeon].has_key?(attribute)
 	  				result[pigeon][attribute] << option.to_s
@@ -38,7 +35,6 @@ def nyc_pigeon_organizer(data)
 	  				attribute => [option.to_s],
 	  			}
 	  		end
-	  		# binding.pry
   		end
   	end
   end

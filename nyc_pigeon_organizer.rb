@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
     value.each do |color, pidgeons|
       pidgeons.each do |pidgeon|
         organized[pidgeon] = {}
+<<<<<<< HEAD
       end 
     end 
   end 
@@ -19,5 +20,11 @@ def nyc_pigeon_organizer(data)
     end 
   end 
   
+=======
+        organized[pidgeon][color]
+      end 
+    end 
+  end 
+>>>>>>> df7b7ae60967c1595c5c0d2fb418e7426d20a49a
   binding.pry
 end 

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":"3.7.1","examples":[],"summary":{"duration":4.545883355,"example_count":0,"failure_count":0,"pending_count":0,"errors_outside_of_examples_count":0},"summary_line":"0 examples, 0 failures"}
+=======
+{"version":"3.7.1","examples":[],"summary":{"duration":49.484843572,"example_count":0,"failure_count":0,"pending_count":0,"errors_outside_of_examples_count":0},"summary_line":"0 examples, 0 failures"}
+>>>>>>> df7b7ae60967c1595c5c0d2fb418e7426d20a49a

@@ -18,5 +18,5 @@ list
 # "Ms. K"=>{:lives=>["Central Park"]},
 # "Queenie"=>{:lives=>["Subway"]},
 # "Andrew"=>{:lives=>["City Hall"]},
-# "Alex"=>{:lives=>["Central Park"]}}, the final attribute from data
+# "Alex"=>{:lives=>["Central Park"]}}, the final attribute from data. So :color and :gender, the first and second attributes are missing.
 end

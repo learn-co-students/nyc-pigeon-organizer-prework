@@ -21,5 +21,5 @@ def nyc_pigeon_organizer(data)
      
   end 
   list 
-  binding.pry 
+  # binding.pry Perfect escept only the 2nd (and last) color for those with multiple colors.
 end

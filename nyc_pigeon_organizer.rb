@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
           list[data_name_string] = {}
           list[data_name_string][data_attribute__symbol] = []
           if list[data_name_string][data_attribute__symbol] == [] 
-            list[data_name_string][data_attribute_symbol] = [data_descriptor_string]}
+            list[data_name_string][data_attribute_symbol] = [data_descriptor_string]
           else  list[data_name_string][data_attribute_symbol] << data_descriptor_string 
           end 
       # data_name_string => {data_attribute_symbol => [data_descriptor_string]}

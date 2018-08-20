@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
       if list[data_name_string] == nil
         list[data_name_string] = {}
       else 
-        list[data_name_string][data_attribute_symbol] = [data_descriptor_symbol.to_s]}
+        list[data_name_string][data_attribute_symbol] = [data_descriptor_symbol.to_s]
       end 
   #    if list[data_name_string][data_attribute_symbol] == nil 
    #      list[data_name_string][data_attribute_symbol] = [data_descriptor_symbol.to_s]}

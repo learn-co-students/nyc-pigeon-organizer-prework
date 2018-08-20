@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
         end 
         
         if list[name_string][attribute_symbol] == nil
-          list[name_string][attribute_symbol = []
+          list[name_string][attribute_symbol] = []
         end 
         
         list[name_string][attribute_symbol].push(descriptor_string)

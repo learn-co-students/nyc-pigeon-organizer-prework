@@ -16,7 +16,7 @@ end
 end
 end 
 list 
- # binding.pry #list returns {"Theo"=>{:lives=>["Subway"]},
+  binding.pry #list returns {"Theo"=>{:lives=>["Subway"]},
 # "Peter Jr."=>{:lives=>["Library"]},
 # "Lucky"=>{:lives=>["Central Park"]},
 # "Ms. K"=>{:lives=>["Central Park"]},

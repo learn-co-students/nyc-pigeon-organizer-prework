@@ -13,13 +13,9 @@ def nyc_pigeon_organizer(data)
           list[name_string][attribute_symbol] = []
         end 
         list[name_string][attribute_symbol] << descriptor_string
-
       # name_string => {attribute_symbol => [descriptor_string]}
       end
-      
     end
   end 
-  
   list 
-  # binding.pry # Perfect escept only the 2nd (and last) color for those with multiple colors.
 end

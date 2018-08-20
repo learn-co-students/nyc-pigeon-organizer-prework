@@ -7,19 +7,16 @@ def nyc_pigeon_organizer(data)
       names_array.each do |name_string|
       
         descriptor_string = descriptor_symbol.to_s 
-        if list[name_string] == nil
-          list[name_string] = {attribute_symbol => [descriptor_string]}
-        else list[name_string][attribute_symbol] =   [descriptor_string] 
-        end 
-        
-        
+        list[name_string] ||= {}
+        list[name_string][attribute_symbol] ||= []
+        list[name_string][attribute_symbol].push(descriptor_string)
+
       # name_string => {attribute_symbol => [descriptor_string]}
-       
       end
-       
+      
     end
-     
   end 
+  
   list 
-  # binding.pry Perfect escept only the 2nd (and last) color for those with multiple colors.
+  # binding.pry # Perfect escept only the 2nd (and last) color for those with multiple colors.
 end

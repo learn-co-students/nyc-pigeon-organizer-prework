@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
   data.each do |data, attribute|
     attribute.each do |option, pigeon_names|
       pigeon_names.each do |name|
-        new_pigeon_data[name] ||= {}
+        new_pigeon_data[name] = {}
         new_pigeon_data[name][data] ||= []
         new_pigeon_data[name][data] << option.to_s
        

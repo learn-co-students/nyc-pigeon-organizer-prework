@@ -18,8 +18,16 @@ def nyc_pigeon_organizer(data)
     if attribute == :gender
       att_data.each do |gender, gender_types|
         gender_types.each do |name|
-          pigeon_list[name] = {gender: []}
+          pigeon_list[name][:gender] =[]
           pigeon_list[name][:gender] << gender.to_s
+        end
+      end
+    end
+    if attribute == :lives
+      att_data.each do |location, pigeons|
+        pigeons.each do |name|
+          pigeon_list[name][:lives] = []
+          pigeon_list[name][:lives] << location.to_s
         end
       end
     end

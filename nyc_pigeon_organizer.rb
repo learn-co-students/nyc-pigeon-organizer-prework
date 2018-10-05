@@ -1,4 +1,27 @@
 #require 'pry'
+# -updated-
+
+def nyc_pigeon_organizer(data)
+  list = {}
+  data.each do |attribute, attribute_hash|#:color, {:purple=>['Theo'...
+    attribute_hash.each do |trait, name_array| #:purple, ['Theo',..]
+      name_array.each do |name| # 'Theo'
+        
+        list[name] ||= {} # 'Theo' => {}
+        list[name][attribute] ||= [] # {"Theo"=>{:purple=>[] 
+        list[name][attribute] << trait.to_s #{"Theo"=>{:color=>["purple"]
+        
+      end
+    end
+  end
+  list
+end
+
+
+
+
+#-original-
+
 def nyc_pigeon_organizer(data)
   list_hash = {}
 

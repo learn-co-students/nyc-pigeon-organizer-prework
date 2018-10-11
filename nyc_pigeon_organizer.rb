@@ -61,14 +61,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do|k, names|
       names.each do |name|
-
-          if new_data[name]
             new_data[name][key]? new_data[name][key] << k.to_s : new_data[name][key] =[k.to_s]
-          else
-            new_hash = Hash.new()
-            new_hash[key] = [k.to_s]
-            new_data[name] = new_hash
-          end
 
       end
     end  
